@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Website | RAJESH P</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+<div id="header"> 
+    <div class="container">
+        <nav>
+            <h1><b style="color: red;">Portfolio.</b></h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <p class="main-title">Hi,<br><br> I am <span style="color: red;">RAJESH P</span>, <br><br> an aspiring Full-Stack web developer</p>
+            <div class="social-icons-main">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter-square"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+           
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <span>
+                    <p>I am RAJESH P, an aspiring Full-Stack web developer. I am a learning enthusiast who wants to learn new things and implement them. Throught my coursework I did my projects and assignments that align with my passion. Recently I started learning about the Artificial Intelligence and Machine Learning as it seems interesting.</p>
+                <p>My goal is to become a successful web developer and contribute to the tech industry.
+                </span>
+                
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python-Django</span><br>Developing backend for websites</li>
+                            <li><span>React</span><br>Developing frontend for websites</li>
+                            <li><span>HTML, CSS and JavaScript</span><br>Developing interactive web pages</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 August - Current</span><br>Web developer Intern at Apex Styles</li>
+                            <li><span>2023 May - 2023 June</span><br>Web development using HTML, CSS and JavaScript</li>
+                            <li><span>2022 November -2022 December</span><br>Android App Development using KOTLIN</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Present</span><br>CMR Institute of Technology | BE | CSE | 8.52 CGPA</li>
+                            <li><span>2021</span><br>Narayana PU College | PUC | PCMB | 97.66 %</li>
+                            <li><span>2019</span><br>Sr. M.V.V.M High School | SSLC | 96 %</li>
+
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="projects" id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects and Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="weather.png">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>Android application that displays weather, humidity, temperature.</p>
+                    <a href="#"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="auditorium.png">
+                <div class="layer">
+                    <h3>Auditorium Management System</h3>
+                    <p>A website that streamlines the booking and management of an auditorium.</p>
+                    <a href="#"><i class="fas fa-link"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="das.png">
+                <div class="layer">
+                    <h3>Doctor Appointment System</h3>
+                    <p>A website for hospitals to manage patient bookings.</p>
+                    <a href="#"><i class="fas fa-link"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="todo.png">
+                <div class="layer">
+                    <h3>Todo list App</h3>
+                    <p>A Todo list application using Flutter allows users to add, edit, delete, and mark tasks as completed.</p>
+                    <a href="#"><i class="fas fa-link"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                <img src="restaurant.png">
+                <div class="layer">
+                    <h3>Restaurant Management & Catering Services</h3>
+                    <p>Website that streamline operations by handling reservations, orders along with customizable catering services.</p>
+                    <a href="#"><i class="fas fa-link"></i></a>
+
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+<div class="contact" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> rajeshcmr19@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 8095662774</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="D:\Resume\Resume.pdf" target="_blank"  class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Enter your name" required>
+                    <input type="email" name="Email" placeholder="Enter your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right='-200px'
+    }
+</script>
+</body>
+</html>
